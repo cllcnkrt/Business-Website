@@ -1,0 +1,103 @@
+/** Fonts
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+**/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&family=Roboto:wght@300;700&display=swap');
+
+/** GENERAL SETTINGS **/
+
+:root{
+    --primary-font: 'Raleway', sans-serif;
+    --secondary-font:'Roboto Condensed', sans-serif;
+    --primary-color: #a7a7fe ;
+    --light-color: #e1b8f7;
+    --dark-color: #7977d6;
+}
+
+html{
+    font-size: 10px;
+    color: var(--dark-color);
+    font-family: var(--primary-font);
+    scroll-behavior: smooth;
+}
+
+section{
+    padding-top: 16rem;
+    padding-bottom: 8rem;
+    min-height: 100vh;
+}
+
+p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+
+h1, h2, h3, h4{
+    color: var(--primary-color);
+    font-family:  var(--primary-font);
+}
+
+button{
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+a{
+    text-decoration: none;
+    font-family: var(--primary-font);
+}
+
+img{
+    width: 100%;
+    max-height: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+/** HERO SECTION **/
+
+#hero{
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url('../img/main_bg.jpg');
+    background-attachment: fixed;
+}
+
+
+.hero-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align: center;
+    width: 90%;
+}
+
+
+.main-title{
+    font-family: var(--primary-font);
+    font-size: 8rem;
+    font-weight: 100px;
+    letter-spacing: 2rem;
+    padding-bottom: 2rem;
+}
+
+.main-slogan{
+    font-size: 1.6rem;
+    color:var(--light-color);
+    letter-spacing: 2.4rem;
+    padding-bottom: 2rem;
+
+}
